@@ -1113,8 +1113,8 @@ input, select, textarea {
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
-		-webkit-filter: blur(0.75px);
-		filter: blur(0.75px);
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
 	}
 
 		#bg:before, #bg:after {
