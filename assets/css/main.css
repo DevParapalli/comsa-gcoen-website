@@ -1375,7 +1375,7 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgb(255, 255, 255);
+						background-color: transparent;
 					}
 
 					#header nav ul li a:active {
