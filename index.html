@@ -41,7 +41,7 @@
 					</header>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" >
 
 						<!-- Events -->
 							<article id="events">
@@ -385,7 +385,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 			<div id="bg"></div>
-			
+			<div id="bg-active"></div>
 		<!-- Scripts -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
@@ -394,18 +394,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/vanta.net.min.js"></script>
-			<script>
+				<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+				<script src="three.r134.min.js"></script>
+				<script src="vanta.net.min.js"></script>
+				<script>
 				VANTA.NET({
-				  el: "#bg",
-				  mouseControls: true,
-				  touchControls: true,
-				  gyroControls: false,
-				  minHeight: 200.00,
-				  minWidth: 200.00,
-				  scale: 1.00,
-				  scaleMobile: 2.00,
-				  //points: 12.00,
-				  //spacing: 14.00
+				el: "#bg",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				scale: 1.00,
+				scaleMobile: 1.00,
+				color: 0x8e610a,
+				backgroundColor: 0x0,
+				points: 11.00,
+				maxDistance: 23.00,
+				spacing: 16.00
 				})
 				</script>
 	</body>
