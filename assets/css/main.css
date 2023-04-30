@@ -1185,6 +1185,11 @@ input, select, textarea {
 			background-color: #000000;
 		}
 
+		body.is-article-visible {
+			-webkit-filter: blur(2px);
+			filter: blur(2px);
+		}
+
 /* Wrapper */
 
 	#wrapper {
