@@ -397,7 +397,7 @@
 
 
 
-document.querySelector("h1, h2.major").onmouseover = event => {
+document.querySelector("h1").onmouseover = event => {
     let iterations = 0;
     const interval = setInterval(() => {
       event.target.innerText = event.target.innerText.split("")
@@ -414,8 +414,8 @@ document.querySelector("h1, h2.major").onmouseover = event => {
         clearInterval(interval);
       }
       
-      iterations += 1 / 10;
-    }, 30);
+      iterations += 1 / 6;
+    }, 20);
     
 }
 

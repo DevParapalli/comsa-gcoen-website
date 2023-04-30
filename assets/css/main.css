@@ -1836,11 +1836,7 @@ input, select, textarea {
 }
 /* Comsa effect */
 .comsa {
-	color: black;
-	/* background-color: rgb(255, 255, 255); */
 	text-transform: uppercase;
-	/* max-width: inherit;
-	display: inline-block; */
 	margin: none;
 	color: white;
 }
