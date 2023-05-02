@@ -1847,7 +1847,7 @@ input, select, textarea {
 
 }
 
-@media (min-width: 500px) {
+@media (max-width: 1000px) {
 	.com-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
