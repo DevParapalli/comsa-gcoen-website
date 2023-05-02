@@ -1847,6 +1847,13 @@ input, select, textarea {
 
 }
 
+@media (min-width: 1000px) {
+	.com-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	
+
 /* Comsa effect */
 .comsa {
 	text-transform: uppercase;
