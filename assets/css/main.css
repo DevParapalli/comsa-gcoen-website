@@ -1790,7 +1790,7 @@ input, select, textarea {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 0.2vh;
-	
+	margin-bottom: 0;	
 }
 
 .person-image {
@@ -1807,15 +1807,17 @@ input, select, textarea {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* border: 2px solid white; */
 }
 
 .card-text {
-	width: 88%;
-	z-index: 5;	
+	width: 100%;
+	z-index: 5;
+	opacity: 90%;	
 	color: rgb(255, 255, 255);
 	/* background-color: #ffffff; */
 	background-color: #262625;
-	margin-top: -3vh;
+	margin-top: 1vh;
 	display: grid;
 	grid-template-rows: 1fr;
 	font-size: 3vh;
@@ -1823,9 +1825,7 @@ input, select, textarea {
 	border-radius: var(--border-radius);
 	/* padding: 2vh;	 */
 	padding-top: 1vh;
-	border-left: 2px #ffffff solid;
-	border-right: 2px #ffffff solid;
-	border-bottom: 2px #ffffff solid;
+	border: 2px #ffffff solid;
 	font-family: SansPro;
 }
 
@@ -1846,7 +1846,7 @@ input, select, textarea {
 	font-family: "Noto Sans", sans-serif;
 
 }
-
+/* Small(mobile) display */
 @media (max-width: 1000px) {
 	.com-wrapper {
 		display: grid;
@@ -1854,10 +1854,33 @@ input, select, textarea {
 	}
 	
 }
+
+
+@media (min-width: 1001px) {
+.divider {
+	margin-bottom: 4vh;
+	margin-top: -2vh;
+	width: 100%;
+	height: 1px;
+	border: 1px solid white;
+	border-radius: 20px; 
+}
+}
 /* Comsa effect */
 .comsa {
 	text-transform: uppercase;
 	margin: none;
 	color: white;
 }
+
+
+/* .hltag {
+
+	margin-left: 80vh;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.005);
+            text-shadow: 1px 1px 1px 
+                rgba(255, 255, 255, 0.20);
+		    margin-bottom: 0;
+}  */
 

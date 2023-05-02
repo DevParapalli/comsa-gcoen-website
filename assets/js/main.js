@@ -394,3 +394,9 @@
 			});
 	}
 })(jQuery);
+
+
+
+// blur on hover
+
+
