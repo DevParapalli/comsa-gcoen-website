@@ -1841,7 +1841,6 @@ input, select, textarea {
 .cmembers {
 	margin: 0;
 	text-decoration: none;
-	text-wrap: balance;
 	font-size: 1.25rem;
 	text-align: center;
 	font-family: "Noto Sans", sans-serif;

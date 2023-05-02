@@ -392,31 +392,29 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
-
+			// Hacker Effect begins here
 					const letters ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-
-
-document.querySelector("h1").onmouseover = event => {
-    let iterations = 0;
-    const interval = setInterval(() => {
-      event.target.innerText = event.target.innerText.split("")
-      .map((letter, index) => {
-        if (index < iterations) {
-          return event.target.dataset.value[index];
-        } else {
-        return letters[Math.floor(Math.random() * 26)]
-        }
-      })
-      .join("");
-      
-      if(iterations >= event.target.dataset.value.length) {
-        clearInterval(interval);
-      }
-      
-      iterations += 1 / 6;
-    }, 20);
-    
-}
+					document.querySelector("h1").onmouseover = event => {
+						let iterations = 0;
+						const interval = setInterval(() => {
+						event.target.innerText = event.target.innerText.split("")
+						.map((letter, index) => {
+							if (index < iterations) {
+							return event.target.dataset.value[index];
+							} else {
+							return letters[Math.floor(Math.random() * 26)]
+							}
+						})
+						.join("");
+						
+						if(iterations >= event.target.dataset.value.length) {
+							clearInterval(interval);
+						}
+						
+						iterations += 1 / 4;
+						}, 18);
+						
+					}
+			// Hacker Effect ends here
 
 })(jQuery);
