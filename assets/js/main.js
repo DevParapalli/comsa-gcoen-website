@@ -331,6 +331,8 @@
 	$window.on('hashchange', function (event) {
 
 		// Empty hash?
+
+	
 		if (location.hash == ''
 			|| location.hash == '#') {
 

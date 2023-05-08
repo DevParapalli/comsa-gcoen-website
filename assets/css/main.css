@@ -1406,7 +1406,7 @@ input, select, textarea {
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1rem 0 1rem;
+					padding: 0;
 					text-transform: uppercase;
 					letter-spacing: 0.1rem;
 					font-size: 0.75rem;
@@ -1415,7 +1415,12 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: transparent;
+						/* background-color: transparent; */
+						background-color: white;
+						transform: scale(1.02);
+						color: black;
+						border-radius: 3px;
+						overflow: hidden;
 					}
 
 					#header nav ul li a:active {
@@ -1884,3 +1889,18 @@ input, select, textarea {
 		    margin-bottom: 0;
 }  */
 
+/* ul > li:hover {
+	background-color: white;
+	transform: scale(1.05);
+	color: black;
+	border-radius: 3px;
+	font-size: 103%;
+	font-weight: 300;
+	overflow: hidden;
+} */
+
+
+ul > :nth-last-child(4) {
+	padding-right: 0;
+	overflow: hidden;
+}
