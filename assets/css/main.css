@@ -1904,3 +1904,32 @@ ul > :nth-last-child(4) {
 	padding-right: 0;
 	overflow: hidden;
 }
+
+/* Card Wrapper */
+.card_wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	row-gap: 20px;
+}
+	.card_wrapper > div{
+		width: 250px;
+	}
+
+/* Card */
+.card{
+	display: flex;
+	flex-direction: column;
+}
+	.card > img{
+	  width: 250px;
+	  height: auto;
+	}
+
+	.card > p{
+		height: 160px;
+		overflow-y: scroll;
+		flex-grow: 1;
+	}
