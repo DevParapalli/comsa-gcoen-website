@@ -1931,3 +1931,98 @@ ul > :nth-last-child(4) {
 	.card > p{
 		flex-grow: 1;
 	}
+
+/* HOD PAGES */
+
+/* IDS */
+
+#department.active{
+	width: 70rem;
+}
+
+#hod--quote{
+	font-weight: 900;
+}
+
+
+/* CLASSES */
+.hod--main{
+	display: flex;
+}
+
+.hod--word{
+	text-align: justify;
+}
+
+.hod--image{
+	margin-left: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hod--name{
+	margin: 2vh 0 0 0;
+	font-size: 2vh;
+	font-weight: 600;
+}
+
+.hod--face{
+	border-radius: 100px;
+	width: 20vh;
+	height: 20vh;
+}
+
+.seperator{
+	border: 1px solid white;
+} 
+
+.dept--faculty{
+	display: flex;
+	flex-direction: column;
+}
+
+.our--faculty{
+	display:inline;
+	margin: 3vh 0 0 0;
+	font-size: 3vh;
+	font-weight: 600;
+}
+
+.names--faculty{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.prof--div{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    border: 1px solid white;
+	border-radius: 50px;
+	margin: 1em;
+	padding: 0.2em;
+	transition: all 0.5s ease-in-out
+}
+
+.prof--name{
+	margin: 2vh 0 0 0;
+	font-size: 4vh;
+	transition: all 0.5s;
+	
+}
+
+.prof--div:hover{
+   transform: scale(1.1);
+   border: 5px solid white;
+   transition: all 0.5s ease-in-out;
+}
+
+.prof--div:hover > .prof--name{
+	font-weight: 600;
+	transition: all 0.5s;
+}
