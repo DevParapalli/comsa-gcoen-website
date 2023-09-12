@@ -1929,7 +1929,5 @@ ul > :nth-last-child(4) {
 	}
 
 	.card > p{
-		height: 160px;
-		overflow-y: scroll;
 		flex-grow: 1;
 	}
