@@ -1829,8 +1829,8 @@ input, select, textarea {
 	font-size: 3vh;
 	font-weight: 800;
 	border-radius: var(--border-radius);
-	/* padding: 2vh;	 */
-	padding-top: 1vh;
+	padding: 2vh;	 
+	/*padding-top: 1vh;*/
 	border: 2px #ffffff solid;
 	font-family: SansPro;
 }
