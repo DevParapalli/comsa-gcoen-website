@@ -2158,12 +2158,13 @@ ul > :nth-last-child(4) {
 
 .gallery-sub{
 	display: grid;
-	grid-template-columns: 32fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .event-name{
 	font-size: 2em;
  font-weight: 700;
+ margin: 2vh;
 }
 
 .gallery-item {
@@ -2187,6 +2188,7 @@ ul > :nth-last-child(4) {
 	display: block;
 	width: 100%;
 	height: 100%;
+	border-radius: 50px;
 	transform: scale(1.15);
 	transition: transform 1s ease-out;
 }
@@ -2203,4 +2205,18 @@ ul > :nth-last-child(4) {
 	font-weight: 400;
 	margin-top: 1.25rem;
 	margin-left: -2rem;
+  }
+
+  @media only screen and (max-width: 1225px) {
+	.gallery-sub{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+  }
+
+  @media only screen and (max-width: 900px) {
+	.gallery-sub{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
   }
