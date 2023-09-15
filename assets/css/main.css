@@ -2116,6 +2116,14 @@ ul > :nth-last-child(4) {
       .prof--name{
 		font-size: 1.8vw;
 	  }
+
+	  .prof--div:hover{
+		background-color: rgba(255, 255, 255, 0.1);
+		color: white;
+		box-shadow: 0 0px 20px #afe0f5;
+		transition: box-shadow 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 }
 
 
@@ -2142,6 +2150,14 @@ ul > :nth-last-child(4) {
 		width: 10rem;
 		height: 10rem;
 	}
+
+	.prof--div:hover{
+		background-color: rgba(255, 255, 255, 0.1);
+		color: white;
+		box-shadow: 0 0px 20px #afe0f5;
+		transition: box-shadow 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 625px){
@@ -2160,6 +2176,14 @@ ul > :nth-last-child(4) {
 	.prof--name{
 		font-size: 1.2rem;
 	}	
+
+	.prof--div:hover{
+		background-color: rgba(255, 255, 255, 0.1);
+		color: white;
+		box-shadow: 0 0px 20px #afe0f5;
+		transition: box-shadow 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 }
 
 /* CONTACT US */
