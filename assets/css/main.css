@@ -1995,6 +1995,12 @@ ul > :nth-last-child(4) {
 		flex-grow: 1;
 	}
 
+.heading--article{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* HOD PAGES */
 
 /* IDS */
@@ -2025,9 +2031,13 @@ ul > :nth-last-child(4) {
 	justify-content: center;
 }
 
+.hod--designation{
+	font-size: 1rem;
+}
+
 .hod--name{
 	margin: 2vh 0 0 0;
-	font-size: 2vh;
+	font-size: 2rem;
 	font-weight: 600;
 }
 
@@ -2070,7 +2080,7 @@ ul > :nth-last-child(4) {
 	padding: 0.2em;
 }
 .prof--name{
-	font-size: 3vh;
+	font-size: 2em;
 	transition: all 0.5s;
 	
 }
@@ -2096,6 +2106,23 @@ ul > :nth-last-child(4) {
 	box-shadow: 0 0px 20px #afe0f5;
     transition: box-shadow 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px){
+	.hod--main{
+		display: grid;
+		grid-template-rows: 1fr 1fr ;
+	}
+
+	.hod--image{
+         margin: 0;
+	}
+
+	.names--faculty{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /* CONTACT US */
