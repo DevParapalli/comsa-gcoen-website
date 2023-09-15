@@ -1,6 +1,6 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ$%^&*_|\/?";
 const COMSA_element = document.querySelector("h1.comsa");
-function COMSA_shuffle(element, iter_inc = 75) {
+function COMSA_shuffle(element, iter_inc = 20) {
     let iterations = 0;
     const interval = setInterval(() => {
         element.innerText = element.innerText.split("")

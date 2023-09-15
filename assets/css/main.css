@@ -5,6 +5,20 @@
 @import url(delirium.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
 
+@font-face {
+	font-family: Orbitron;
+	src: url(/assets/fonts/Orbitron-VariableFont_wght.ttf);
+}
+ 
+@font-face {
+	font-family: Miso;
+	src: url(/assets/fonts/miso-regular.otf);
+}
+
+@font-face {
+	font-family: Bebue-new;
+	src: url(/assets/fonts/BebasNeue-Regular.ttf);
+}
 
 :root {
 	--border-radius: 5px;
@@ -31,7 +45,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -1790,66 +1805,113 @@ input, select, textarea {
 }
 
 
+
 /* card */
 
+#committee.active{
+	width: 70em;
+}
+
 .com-wrapper {
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	
 	grid-gap: 0.2vh;
 	margin-bottom: 0;	
 }
 
 .person-image {
+	border-radius: 1000px;
+	width: auto;
+	margin-bottom: 4vh;
+	z-index: 4;
+	overflow: hidden;
+}
+
+.person-image > img {
+	width: 100%;  
+    object-fit: contain; 
+    object-position: center; 
+	transform: scale(1.1);
+}
+
+.card-break{
+	background: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
 	width: 100%;
-	z-index: 1;
-	border-radius: var(--border-radius);
-	border-left: 1px #ffffff solid;
-	border-right: 1px #ffffff solid;
-	border-top: 1px #ffffff solid;
+	height: 3px;
+	border-radius: 50px;
+	margin-bottom: 1vh;
 }
 
 .card-back {
-	margin: 5%;
+	margin: 5vh;
+	padding: 2vh;
+	border-radius: 2vh;
 	display: flex;
+	background-color: #1b1f22;
 	flex-direction: column;
 	align-items: center;
-	/* border: 2px solid white; */
+	position: relative;
+
 }
 
+.card-back::after{
+	content: '';
+	border-radius: 3vh;
+	position: absolute;
+	background: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+	inset: -.5em;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+
+.card-back::before{
+	content: '';
+	border-radius: 3vh;
+	position: absolute;
+	background: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+	inset: -.5em;
+	z-index: -1;
+}
+
+
 .card-text {
-	width: 100%;
+	width: auto;
 	z-index: 5;
 	opacity: 90%;	
 	color: rgb(255, 255, 255);
 	/* background-color: #ffffff; */
-	background-color: #262625;
 	margin-top: 1vh;
 	display: grid;
 	grid-template-rows: 1fr;
 	font-size: 3vh;
-	font-weight: 800;
-	border-radius: var(--border-radius);
-	padding: 2vh;	 
+	border-radius: var(--border-radius); 
 	/*padding-top: 1vh;*/
-	border: 2px #ffffff solid;
+	
 	font-family: SansPro;
 }
 
 
 .post {
 	/* margin: auto; */
-	font-size: 1rem;
+	font-family: Orbitron, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
 	font-weight: 100;
 	text-align: center;
 	padding: 0;
+
 }
 
 .cmembers {
 	margin: 0;
 	text-decoration: none;
-	font-size: 1.25rem;
+	margin-bottom: 2vh;
+	font-size: 2rem;
 	text-align: center;
-	font-family: "Noto Sans", sans-serif;
+	font-family: Miso;
+	font-weight: 700;
 
 }
 /* Small(mobile) display */
@@ -2053,12 +2115,92 @@ ul > :nth-last-child(4) {
 /* Gallery */
 
 #gallery.active{
-	width: 70em;
+	width: 75em;
 }
 
-.event--img{
-	width: 50vw;
-	height: 50vh;
+.gallery {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.event--photos{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 
+.event--img {
+	max-width: 40vw;
+	height: auto;
+	border-radius: 50px;
+	
+}
+
+
+/* .gallery-items {
+	flex: 1;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	max-width: calc(33.33% - 20px); /* Adjust the width based on the number of columns and gap 
+} */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery-sub{
+	display: grid;
+	grid-template-columns: 32fr 1fr 1fr;
+}
+
+.event-name{
+	font-size: 2em;
+ font-weight: 700;
+}
+
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.event-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50px;
+	transition: transform 400ms ease-out;
+}
+
+.event-img:hover {
+
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: scale(1.15);
+	transition: transform 1s ease-out;
+}
+
+.img-content-hover {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	display: none;
+	padding: 1rem;
+	background: white;
+	font-weight: 400;
+	margin-top: 1.25rem;
+	margin-left: -2rem;
+  }
