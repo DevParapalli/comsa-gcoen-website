@@ -2091,6 +2091,7 @@ ul > :nth-last-child(4) {
 	margin: 0.1em;
 	width: 20vh;
 	height: 20vh;
+	object-fit: cover;
 }
 
 .prof--info{
@@ -2114,7 +2115,7 @@ ul > :nth-last-child(4) {
 @media only screen and (max-width: 1670px){
       .prof--name{
 		font-size: 1.8vw;
-	  }	
+	  }
 }
 
 
