@@ -20,6 +20,11 @@
 	src: url(/assets/fonts/BebasNeue-Regular.ttf);
 }
 
+@font-face {
+	font-family: Pixel;
+	src: url(/assets/fonts/Pixels.ttf);
+}
+
 :root {
 	--border-radius: 5px;
 }
@@ -2003,6 +2008,9 @@ ul > :nth-last-child(4) {
 
 /* HOD PAGES */
 
+.heading--topic{
+	display: inline-grid;
+}
 /* IDS */
 
 #department.active{
@@ -2131,7 +2139,7 @@ ul > :nth-last-child(4) {
 @media only screen and (max-width: 1200px){
 	.hod--main{
 		display: grid;
-		grid-template-rows: 1fr 1fr ;
+		grid-template-rows: 1fr;
 	}
 
 	.hod--image{
@@ -2308,3 +2316,21 @@ ul > :nth-last-child(4) {
 	}
 
   }
+
+
+  /* NEWS */
+ .news--page{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+ }
+
+ .news--info{
+	text-align: justify;
+ }
+
+ @media only screen and (max-width: 1225px) {
+	.news--page{
+		display: grid;
+		grid-template-columns: 1fr;
+	 }
+ }
