@@ -2321,7 +2321,7 @@ ul > :nth-last-child(4) {
   /* NEWS */
  .news--page{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
  }
 
  .news--info{
